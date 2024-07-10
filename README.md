@@ -9,4 +9,4 @@ This repository contains a project focused on classifying music using machine le
 - predict/: Some audios to test the model.
 
 ## References
-- [Paper](https://arxiv.org/abs/1804.01149)
+- [Music Genre Classification using Machine Learning Techniques](https://arxiv.org/abs/1804.01149)
