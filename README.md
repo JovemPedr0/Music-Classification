@@ -10,3 +10,4 @@ This repository contains a project focused on classifying music using machine le
 
 ## References
 - [Music Genre Classification using Machine Learning Techniques](https://arxiv.org/abs/1804.01149)
+- [Data Augmentation Using GANs](https://arxiv.org/abs/1904.09135)
