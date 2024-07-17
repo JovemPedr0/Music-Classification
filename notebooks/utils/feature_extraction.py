@@ -35,11 +35,6 @@ def extract_feature_means(audio_file_path: str, n_rates:int=660000) -> pd.DataFr
     s_audio = librosa.feature.melspectrogram(y=signal, sr=sr)
     s_db_audio = librosa.amplitude_to_db(s_audio, ref=np.max)
 
-    # 5 Zero crossings
-
-    # #6. Harmonics and Perceptrual
-    # Note:
-    #
     # Harmonics are characteristichs that represent the sound color
     # Perceptrual shock wave represents the sound rhythm and emotion
     y_harm, y_perc = librosa.effects.hpss(y=signal)
