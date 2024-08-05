@@ -39,9 +39,6 @@ def extract_feature_means(audio_file_path: str, n_rates:int=660000) -> pd.DataFr
     # Perceptrual shock wave represents the sound rhythm and emotion
     y_harm, y_perc = librosa.effects.hpss(y=signal)
 
-    # 7. Spectral Centroid
-    # Note: Indicates where the ”centre of mass” for a sound is located and is calculated
-    # as the weighted mean of the frequencies present in the sound.
 
     # Calculate the Spectral Centroids
     spectral_centroids = librosa.feature.spectral_centroid(y=signal, sr=sr)[0]
